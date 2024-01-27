@@ -1,0 +1,129 @@
+:root {
+  --pp-font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --pp-line-height: 1.5;
+  font-weight: 400;
+
+  --light-color-: #eef5ff;
+  --secodary-color: #b4d4ff;
+  --pp-color: #1e81a2;
+  --background-color: #86b6f6;
+  --main-transition: all 3ms ease-out;
+  --font-pp-color: #313437;
+  --font-secondary-color: #52585e;
+}
+
+.list-container {
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  scroll-behavior: smooth;
+  max-height: 100%;
+  height: max-content;
+  overflow: hidden;
+  padding: 15px 5px;
+  border-color: #b3e6ffeb;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fdfefe1c;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: all 3ms ease-out;
+  animation: moveinright 3s;
+  backface-visibility: hidden;
+  margin-top: 10px;
+}
+.item-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.item-container:active {
+  transform: translate(1px);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.title {
+  font-family: roboto;
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #7b848c;
+  margin-top: 10px;
+}
+.discription {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.56px;
+  font-weight: 500;
+  color: #7e909fbd;
+}
+
+@keyframes moveinright {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-10px);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+list {
+  list-style: none;
+}
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  height: 2px 2px;
+  max-height: 20px 20px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: -4px;
+}
+.icon-container {
+  color: #86b6f6;
+}
+.icon {
+  height: 2px 2px;
+  max-height: 2px 2px;
+  width: 100%;
+}
+
+.done {
+  background: #ebededaa;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 40px;
+  padding: 0px 30px;
+  color: #2d2f33;
+  border-radius: 4px;
+  border: 1px solid rgba(108, 106, 106, 0.111);
+  text-align: center;
+  margin: 4px 8px;
+}
+.done-icon {
+  height: 20px;
+  width: 40px;
+}
+.delete-btn,
+.check-btn {
+  background: #ffffff12;
+  border: 1px solid #7b848c3f;
+  transition: all 2ms ease-out;
+}
+
+.delete-btn:hover,
+.check-btn:hover {
+  transform: translateY(-2px);
+}
+.delete-btn:active,
+.check-btn:active {
+  transform: translateY(1px);
+}

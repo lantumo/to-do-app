@@ -1,0 +1,24 @@
+.todo-section {
+  display: grid;
+  justify-content: center;
+  margin-right: 2px;
+  margin-left: 2px;
+  background: var(--light-color-);
+  max-height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: max-content;
+  grid-gap: 1px 10px;
+  min-height: 100%;
+  max-height: min-content;
+}
+
+.quote {
+  color: #40454ba3;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+  font-size: 20px;
+}

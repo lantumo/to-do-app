@@ -1,0 +1,42 @@
+:root {
+  --pp-font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --pp-line-height: 1.5;
+  font-weight: 400;
+
+  --light-color-: #eef5ff;
+  --secodary-color: #b4d4ff;
+  --pp-color: #176b87;
+  --background-color: #86b6f6;
+  --pp-color: #176b87;
+  --dark-color: #2e333b;
+}
+
+.app {
+  min-height: 600px;
+  max-height: fit-content;
+  width: 800px;
+  background: #000;
+  scroll-behavior: smooth;
+  position: absolute;
+  padding: 0px 40px;
+  margin-top: 0px 20px;
+  background: var(--light-color-);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px var(--pp-color);
+  border-radius: 2px;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0px;
+  align-items: center;
+}
+.main-title {
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 2px;
+}

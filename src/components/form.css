@@ -1,0 +1,68 @@
+/* :root {
+    --pp-font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    --pp-line-height: 1.5;
+    font-weight: 400;
+  
+    --light-color-: #eef5ff;
+    --secodary-color: #b4d4ff;
+    --pp-color: #1e81a2;
+    --background-color: #86b6f6;
+    --font-pp-color:#313437;
+    --main-transition: all 3ms ease-out;
+}
+
+
+
+*/
+
+img {
+  --background-color: #313437;
+  height: 35px;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.form {
+  background: #a8c1d340;
+  padding: 10px 15px;
+  border-radius: 0.56rem;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  border-radius: 4px;
+  border-color: #0f0f0f;
+}
+
+.input {
+  border-radius: 4px;
+  border-color: #0f0f0f;
+  background: #ffffffe4;
+  height: 40px;
+  width: 400px;
+  max-width: 400px;
+  padding: 10px 10px;
+  border: none;
+  margin-right: 10px;
+  color: var(--font-pp-color);
+}
+.input:focus {
+  outline: none;
+  padding: 10px 10px;
+  border: 2px solid var(--background-color);
+}
+.btn-add {
+  background: rgba(234, 233, 233, 0.1);
+  opacity: 0.85;
+  border: none;
+  margin-left: 2px;
+}
+.btn-add:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  opacity: 1;
+}
+.btn-add:active {
+  cursor: pointer;
+  transform: translateY(1px);
+}
